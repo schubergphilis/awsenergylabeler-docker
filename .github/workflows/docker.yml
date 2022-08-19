@@ -13,8 +13,8 @@ on:
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
-  # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
+  # github.repository_owner as <account>, for this repo is schubergphilis
+  IMAGE_NAME: ${{ github.repository_owner }}/awsenergylabeler
 
 jobs:
   docker:
@@ -27,7 +27,7 @@ jobs:
       # https://github.com/hadolint/hadolint-action
       - uses: hadolint/hadolint-action@v2.0.0
         with:
-          dockerfile: awsenergylabeler/Dockerfile
+          dockerfile: ./awsenergylabeler/Dockerfile
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
