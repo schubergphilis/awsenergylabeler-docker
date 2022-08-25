@@ -5,7 +5,7 @@
 Running the container for your local machine (assuming you already setup `~/.aws` folder with your credentials and config)
 
 ```bash
-docker run -v ~/.aws:/home/nonroot/.aws awsenergylabeler -s 747966750797
+docker run -v ~/.aws:/home/nonroot/.aws awsenergylabeler -s <ACCOUNT_NUMBER>
 ```
 
 Or running with environment variables set:
