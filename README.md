@@ -5,13 +5,13 @@
 Running the container for your local machine (assuming you already setup `~/.aws` folder with your credentials and config)
 
 ```bash
-docker run -v ~/.aws:/home/nonroot/.aws awsenergylabeler -s <ACCOUNT_NUMBER>
+docker run -v ~/.aws:/home/nonroot/.aws ghcr.io/schubergphilis/awsenergylabeler:<VERSION> -s <ACCOUNT_NUMBER>
 ```
 
 Or running with environment variables set:
 
 ```bash
-docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN awsenergylabeler -s <ACCOUNT_NUMBER> --region eu-west-1
+docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN ghcr.io/schubergphilis/awsenergylabeler:<VERSION> -s <ACCOUNT_NUMBER> --region eu-west-1
 ```
 
 ## Container signature
