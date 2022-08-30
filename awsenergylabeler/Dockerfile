@@ -6,7 +6,7 @@ FROM debian:11-slim AS build
 RUN apt-get update && \
     apt-get install --no-install-suggests --no-install-recommends --yes python3-venv=3.9.2-3 gcc=4:10.2.1-1 libpython3-dev=3.9.2-3 && \
     python3 -m venv /venv && \
-    /venv/bin/pip install --upgrade pip==22.2.2 setuptools==65.3.0 wheel==0.37.1 && \
+    /venv/bin/pip install pip==22.2.2 setuptools==65.3.0 wheel==0.37.1 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
