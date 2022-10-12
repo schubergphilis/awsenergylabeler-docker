@@ -77,3 +77,20 @@ Or running with environment variables set:
 ```bash
 docker run -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN ghcr.io/schubergphilis/awsenergylabeler:<VERSION> -s <ACCOUNT_NUMBER> --region eu-west-1
 ```
+
+## Container signature
+All container in this repository are signed and their signature can be verified against the following public key:
+
+#### **cosign.pub**
+```bash
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEiiLa3LCyiwGcZeYNCktkJmllgYpN
++DXIRff+t1WcTinlWuIt5wMqVurKzAEqiOQdYylZq5UMclb1dSK9RXS95g==
+-----END PUBLIC KEY-----
+```
+
+Manually verification can be performed by issuing:
+
+```bash
+cosign verify --key cosign.pub <IMAGE_NAME>
+```
