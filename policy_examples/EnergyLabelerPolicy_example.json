@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::bucket/team/*",
+        "arn:aws:s3:::bucket/team"
+      ]
+    },
+    {
+      "Sid": "VisualEditor1",
+      "Effect": "Allow",
+      "Action": [
+        "organizations:DescribeOrganization",
+        "organizations:ListAccounts",
+        "organizations:DescribeAccount",
+        "iam:ListAccountAliases",
+        "ec2:DescribeRegions",
+        "securityhub:ListFindingAggregators",
+        "securityhub:GetFindings"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
