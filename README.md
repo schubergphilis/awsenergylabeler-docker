@@ -5,7 +5,7 @@ docker pull ghcr.io/schubergphilis/awsenergylabeler:<VERSION>
 Lists all SecurityHub findings and recommendations and calculate an Energy Label. 
 Container image packaged with [awsenergylabelercli](https://pypi.org/project/awsenergylabelercli/)
 
-This container needs to run with the right permissions to be able to list security findings and calculare the energy label. See Permissions below.
+This container needs to run with the right permissions to be able to list security findings and calculare the energy label. See [Permissions](#permissions) below.
 
 
 ## Energy Labels
