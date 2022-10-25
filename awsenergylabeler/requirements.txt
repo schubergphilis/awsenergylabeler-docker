@@ -1,1 +1,1 @@
-awsenergylabelercli==1.1.3
+awsenergylabelercli==2.0.0
