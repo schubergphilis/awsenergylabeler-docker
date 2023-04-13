@@ -24,4 +24,3 @@ COPY --from=build-venv /venv /venv
 WORKDIR /venv
 USER nonroot
 ENTRYPOINT [ "/venv/bin/aws-energy-labeler" ]
-CMD [ "--help" ]
