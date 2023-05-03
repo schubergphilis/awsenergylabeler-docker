@@ -90,8 +90,8 @@ All container in this repository are signed and their signature can be verified 
 #### **cosign.pub**
 ```bash
 -----BEGIN PUBLIC KEY-----
-MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEiiLa3LCyiwGcZeYNCktkJmllgYpN
-+DXIRff+t1WcTinlWuIt5wMqVurKzAEqiOQdYylZq5UMclb1dSK9RXS95g==
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0KAPZzcYGAtXaruQNbFiGTiy058c
+OMNVzxDVRQSE6lDIB3MCayVdUcyy8b2OmJZ7TYBYLCuEAlFWxVVLMMJ7Cg==
 -----END PUBLIC KEY-----
 ```
 
