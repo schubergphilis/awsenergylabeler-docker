@@ -85,8 +85,8 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=ref,event=branch
-            type=semver,pattern={{version}}-lambda
+            type=ref,event=branch,suffix=lambda
+            type=semver,pattern={{version}}
       # Build and push Docker image with Buildx (don't push on PR)
       # Also make use of Github Actions cache to speed up pipeline runs
       # https://github.com/docker/build-push-action
