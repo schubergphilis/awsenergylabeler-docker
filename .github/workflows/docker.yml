@@ -92,7 +92,7 @@ jobs:
       # https://github.com/docker/build-push-action
       - name: Build and push Docker image
         id: build-and-push
-        uses: docker/build-push-action@1cb9d22b932e4832bb29793b7777ec860fc1cde0
+        uses: docker/build-push-action@5176d81f87c23d6fc96624dfdbcd9f3830bbe445
         with:
           context: awsenergylabeler
           push: ${{ github.event_name != 'pull_request' }}
@@ -103,7 +103,7 @@ jobs:
           cache-to: type=gha,mode=max
       - name: Build and push Docker image lambda
         id: build-and-push-lambda
-        uses: docker/build-push-action@1cb9d22b932e4832bb29793b7777ec860fc1cde0
+        uses: docker/build-push-action@5176d81f87c23d6fc96624dfdbcd9f3830bbe445
         with:
           context: awsenergylabeler-lambda
           push: ${{ github.event_name != 'pull_request' }}
