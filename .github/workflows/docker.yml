@@ -38,7 +38,7 @@ jobs:
 
       # Perform Dockerfile linting every time workflow is triggered
       # https://github.com/hadolint/hadolint-action
-      - uses: hadolint/hadolint-action@v2.0.0
+      - uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: ./awsenergylabeler/Dockerfile
 
