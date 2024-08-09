@@ -12,5 +12,5 @@ jobs:
   MCVS-PR-validation-action:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4
       - uses: schubergphilis/mcvs-pr-validation-action@v0.1.1
